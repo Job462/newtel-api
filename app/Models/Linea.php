@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Linea extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'nombre', 'proveedor', 'velocidad', 'precio', 'tipo', 'titular', 'celular', 'comentario', 'direccion', 'encargado', 'created_at'
+    ];
 }
